@@ -36,6 +36,30 @@ Fmpeg Converter ile hazırlanan MJPEG videonun ESP32-2432S028 (CYD) ekranında o
 
 > Fotoğraflar gerçek donanımdan alınmıştır. Ekrandaki renkler ve görüntü kalitesi kullanılan panel ve video ayarlarına bağlıdır.
 
+## ESP32 CYD — Negatif Renk Düzeltmesi
+
+Bazı **ESP32-2432S028 (CYD)** ekranlarında video renkleri negatif (ters) görünebilir. Arduino video oynatıcı kodunda, ekran başlatıldıktan sonra şu ayarı kullanabilirsiniz:
+
+```cpp
+gfx->invertDisplay(true);  // Negatif görünen renkleri düzeltir (uyumlu panellerde)
+```
+
+Orijinal kodda satır yorum içindeyse başındaki `//` işaretini kaldırın:
+
+```cpp
+// gfx->invertDisplay(true);  // Eski: devre dışı
+gfx->invertDisplay(true);     // Yeni: etkin
+```
+
+Yatay ekran kullanıyorsanız ekran dönüşünü de ayarlayın:
+
+```cpp
+gfx->setRotation(1);       // Yatay: 320x240
+gfx->invertDisplay(true);  // Renk terslemesini etkinleştir
+```
+
+> **Not:** Renk tersleme ihtiyacı panel sürümüne göre değişir. Renkler zaten doğruysa `invertDisplay(false)` kullanın veya satırı kaldırın. `setRotation(1)` ekran yönünü değiştirir; videonun kendi yönünü otomatik düzeltmez. Yatay oynatma için MJPEG videoyu da **320×240** olarak dönüştürün. Ekran ters tarafta kalırsa `setRotation(3)` deneyin.
+
 ## Teşekkür ve Referanslar
 
 ESP32-2432S028 (CYD) üzerinde MJPEG video oynatma konusunda paylaştığı açık kaynak çalışması ve öğretici video için **The Last Outpost Workshop**'a teşekkür ederiz.
