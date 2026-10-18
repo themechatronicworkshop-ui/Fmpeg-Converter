@@ -22,6 +22,20 @@ Windows PowerShell 5.1 ve Windows Forms gerektirir. Python gerekmez.
 ## ESP32 CYD
 ESP32-2432S028 için örnek çözünürlük: dikey 240×320 veya yatay 320×240. Başlangıç için 20 FPS ve JPEG kalite 7 deneyebilirsiniz.
 
+
+## ESP32 CYD — Gerçek Cihaz Görüntüleri
+
+Fmpeg Converter ile hazırlanan MJPEG videonun ESP32-2432S028 (CYD) ekranında oynatılmasından örnekler:
+
+<table>
+<tr>
+<td width="50%"><img src="deneme1.jpeg" alt="ESP32 CYD üzerinde video oynatma — görüntü 1" width="100%"></td>
+<td width="50%"><img src="deneme2.jpeg" alt="ESP32 CYD üzerinde video oynatma — görüntü 2" width="100%"></td>
+</tr>
+</table>
+
+> Fotoğraflar gerçek donanımdan alınmıştır. Ekrandaki renkler ve görüntü kalitesi kullanılan panel ve video ayarlarına bağlıdır.
+
 ## Notlar
 - Bu **v1 önizleme sürümüdür**; kapsamlı Windows testi yapılmamıştır.
 - Çıktı MJPEG'dir, ses içermez. HDMI profili HDMI sinyali üretmez.
