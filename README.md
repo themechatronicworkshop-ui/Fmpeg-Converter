@@ -36,6 +36,15 @@ Fmpeg Converter ile hazırlanan MJPEG videonun ESP32-2432S028 (CYD) ekranında o
 
 > Fotoğraflar gerçek donanımdan alınmıştır. Ekrandaki renkler ve görüntü kalitesi kullanılan panel ve video ayarlarına bağlıdır.
 
+## Teşekkür ve Referanslar
+
+ESP32-2432S028 (CYD) üzerinde MJPEG video oynatma konusunda paylaştığı açık kaynak çalışması ve öğretici video için **The Last Outpost Workshop**'a teşekkür ederiz.
+
+- **Orijinal ESP32 video oynatıcı projesi:** [thelastoutpostworkshop/esp32-2432S028_video_player](https://github.com/thelastoutpostworkshop/esp32-2432S028_video_player)
+- **YouTube anlatımı:** [ESP32 video oynatıcı videosu](https://www.youtube.com/watch?v=jYcxUgxz9ks)
+
+Fmpeg Converter, videoları uygun biçime dönüştürmek için hazırlanmış ayrı bir Windows aracıdır. ESP32 üzerinde video oynatma tarafında yukarıdaki çalışmadan yararlanılmıştır. **Bu depo, orijinal geliştiriciyle resmî bağlantılı veya onun tarafından onaylanmış değildir.**
+
 ## Notlar
 - Bu **v1 önizleme sürümüdür**; kapsamlı Windows testi yapılmamıştır.
 - Çıktı MJPEG'dir, ses içermez. HDMI profili HDMI sinyali üretmez.
