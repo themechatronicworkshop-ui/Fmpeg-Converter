@@ -1,0 +1,10 @@
+# Windows
+Thumbs.db
+Desktop.ini
+*.log
+*.tmp
+# Bundled FFmpeg binaries and release archives
+engine/
+*.zip
+*.exe
+*.dll
